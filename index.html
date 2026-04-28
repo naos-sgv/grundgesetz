@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <title>Grundgesetz Schnitzeljagd by SgV</title>
+</head>
+<body>
+  <div id="map">
+    <img src="karte.png" alt="Karte">
+
+    <div class="point" id="p1" data-id="1" style="top: 40%; left: 30%;"></div>
+    <div class="point" id="p2" data-id="2" style="top: 60%; left: 50%;"></div>
+    <div class="point" id="p3" data-id="3" style="top: 30%; left: 70%;"></div>
+    <div class="point" id="p4" data-id="4" style="top: 10%; left: 20%;"></div>
+    <div class="point" id="p5" data-id="5" style="top: 20%; left: 25%;"></div>
+    <div class="point" id="p6" data-id="6" style="top: 90%; left: 90%;"></div>
+    <div class="point" id="p7" data-id="7" style="top: 70%; left: 30%;"></div>
+    <div class="point" id="p8" data-id="8" style="top: 20%; left: 50%;"></div>
+    <div class="point" id="p9" data-id="9" style="top: 95%; left: 5%;"></div>
+    <div class="point" id="p10" data-id="10" style="top: 30%; left: 40%;"></div>
+    <div class="point" id="p11" data-id="11" style="top: 80%; left: 25%;"></div>
+    <div class="point" id="p12" data-id="12" style="top: 10%; left: 10%;"></div>
+  </div>
+
+  <div id="overlay" class="hidden">
+    <div id="content"></div>
+  </div>
+
+  <br>
+
+  <button id="resetButton" onclick="resetProgress()">Reset</button>
+      
+  <br>
+
+  <div id="footer">
+    <p>Ein Projekt der AG <i>Schule in guter Verfassung</i> zum Tag des Grundgesetzes 2026</p>
+  </div>
+
+  <audio id="wrongSound">
+    <source src="wrong.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="rightSound">
+    <source src="right.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
